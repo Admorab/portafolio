@@ -1,12 +1,10 @@
-.contact{
-  display:flex;
-  align-items:center;
-  position: fixed;
-  height: 100%;
-    padding-left: 50px;
+.contact {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
-
-

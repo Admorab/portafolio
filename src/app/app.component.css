@@ -33,7 +33,6 @@ main {
   background: #222222;
   text-align:center;
   left: 240px;
-  color: aliceblue;
   position: absolute;
   /* overflow-y: scroll; */
 
@@ -47,13 +46,14 @@ main {
   height: 100%;
   width: 240px;
   position: fixed;
+  /* overflow:scroll; */
   top: 0;
   left: 0;
   margin: 0%;
   float: left;
   z-index: 5;
   outline: none;
-  color: aliceblue;
+
 }
 .menu .avatar {
   background: rgba(0, 0, 0, 0.1);
@@ -87,17 +87,20 @@ main {
   cursor: pointer;
   margin: 10px;
 }
-.menu ul li.icon-dashboard {
-  background-image: url("http://www.entypo.com/images//gauge.svg");
+.menu ul li.icon-home {
+  background-image: url("../assets/icons/home.png");
 }
-.menu ul li.icon-customers {
-  background-image: url("http://www.entypo.com/images//briefcase.svg");
+.menu ul li.icon-about {
+  background-image: url("../assets/icons/about.png");
 }
-.menu ul li.icon-users {
-  background-image: url("http://www.entypo.com/images//users.svg");
+.menu ul li.icon-portfolio {
+  background-image: url("../assets/icons/portfolio.png");
 }
-.menu ul li.icon-settings {
-  background-image: url("http://www.entypo.com/images//tools.svg");
+.menu ul li.icon-contact {
+  background-image: url("../assets/icons/contact.png");
+}
+.menu ul li.icon-theme {
+  background-image: url("../assets/icons/theme.png");
 }
 .menu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -175,7 +178,7 @@ main {
   }
   main {
     position: absolute !important;
-    left: 0 !important;
+    left: 90px !important;
   }
 }
 @media screen and (max-width: 400px) {

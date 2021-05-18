@@ -1,38 +1,36 @@
 <div class="container">
-  <nav class="menu" tabindex="0">
+  <nav class="menu" [@temaNav]="temaNav" tabindex="0">
     <div class="bar"><div class="smartphone-menu-trigger"></div></div>
-    <header class="avatar">
+    <header  class="avatar">
       <img src="assets/images/image.jpg" alt="" />
-      <h2>Ricardo Bolaños</h2>
+      <h2 >Ricardo Bolaños</h2>
     </header>
     <div class="">
       <ul>
-        <li tabindex="0" routerLink="/home" routerLinkActive="active">
+        <li class="icon-home" tabindex="0" routerLink="/home" routerLinkActive="active">
           <span>Inicio</span>
         </li>
-        <li tabindex="0" routerLink="/about" routerLinkActive="active">
+        <li class="icon-about" tabindex="0" routerLink="/about" routerLinkActive="active">
           <span>Acerca de mi</span>
         </li>
-        <li tabindex="0" routerLink="/portfolio" routerLinkActive="active">
+        <li class="icon-portfolio" tabindex="0" routerLink="/portfolio" routerLinkActive="active">
           <span>Portafolio</span>
         </li>
-        <li tabindex="0" routerLink="/contact" routerLinkActive="active">
+        <li class="icon-contact" tabindex="0" routerLink="/contact" routerLinkActive="active">
           <span>Contacto</span>
+        </li>
+        <li class="icon-theme" tabindex="0" (click)="cambiarTema()">
+          <span>Dark/Light</span>
         </li>
       </ul>
     </div>
   </nav>
-
-
 </div>
 
-
-
 <div class="router-outlet">
-  <main class="m-auto">
+  <main class="m-auto" [@temaBody]="temaBody">
     <div class="helper">
       <router-outlet></router-outlet>
     </div>
   </main>
 </div>
-
