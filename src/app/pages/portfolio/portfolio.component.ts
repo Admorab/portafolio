@@ -3,14 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'portfolio',
   templateUrl: './portfolio.component.html',
-  styles: [
-  ]
+  styleUrls: ['./portfolio.style.css'],
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit(): void {
   }
+
+
 
 }
