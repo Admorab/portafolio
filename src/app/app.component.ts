@@ -11,10 +11,10 @@ import {
   trigger,
 } from '@angular/animations';
 
-const lightNav = { backgroundColor: '#b7b7a4', color: 'black' };
-const darkNav = { color: 'white', };
-const lightBody = { backgroundColor: '#6e6e68', color: 'black' };
-const darkBody = {  color: 'white' };
+const lightNav = { backgroundColor: '#34ace0', color: 'black' };
+const darkNav = { backgroundColor:'#40407a', color: 'white' };
+const lightBody = { backgroundColor: '#ced6e0', color: 'black' };
+const darkBody = { backgroundColor:'#2f3542', color: 'white' };
 
 @Component({
   selector: 'app-root',
@@ -24,12 +24,12 @@ const darkBody = {  color: 'white' };
     trigger('temaNav', [
       state('light', style(lightNav)),
       state('dark', style(darkNav)),
-      transition('light <=> dark', animate(500)),
+      transition('light <=> dark', animate(1000)),
     ]),
     trigger('temaBody', [
       state('light', style(lightBody)),
       state('dark', style(darkBody)),
-      transition('light <=> dark', animate(500)),
+      transition('light <=> dark', animate(1000)),
     ]),
   ],
 })
@@ -47,10 +47,8 @@ export class AppComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
-  selected = 'Inicio';
-
   cambiarTema() {
-    this.temaNav = this.temaNav === 'dark' ? 'light':'dark';
-    this.temaBody = this.temaBody === 'dark' ? 'light':'dark';
+    this.temaNav = this.temaNav === 'dark' ? 'light' : 'dark';
+    this.temaBody = this.temaBody === 'dark' ? 'light' : 'dark';
   }
 }
